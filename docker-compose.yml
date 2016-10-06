@@ -46,3 +46,8 @@ services:
     volumes:
       - ./channel-directions:/go
     command: go run main.go
+  slices:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./slices:/go
+    command: go run main.go
