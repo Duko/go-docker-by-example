@@ -1,0 +1,48 @@
+version: "2"
+
+services:
+  hello-world:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./hello-world:/go
+    command: go run main.go 
+  values:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./values:/go
+    command: go run main.go
+  variables:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./variables:/go
+    command: go run main.go
+  constants:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./constants:/go
+    command: go run main.go
+  for:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./for:/go
+    command: go run main.go
+  if-else:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./values:/go
+    command: go run main.go
+  switch:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./switch:/go
+    command: go run main.go
+  arrays:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./arrays:/go
+    command: go run main.go
+  channel-directions:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./channel-directions:/go
+    command: go run main.go
