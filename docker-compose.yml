@@ -51,3 +51,8 @@ services:
     volumes:
       - ./slices:/go
     command: go run main.go
+  maps:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./maps:/go
+    command: go run main.go
