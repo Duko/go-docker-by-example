@@ -81,3 +81,8 @@ services:
     volumes:
       - ./closures:/go
     command: go run main.go
+  recursion:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./recursion:/go
+    command: go run main.go
