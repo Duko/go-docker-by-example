@@ -66,3 +66,8 @@ services:
     volumes:
       - ./functions:/go
     command: go run main.go
+  multiple-return-values:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./multiple-return-values:/go
+    command: go run main.go
