@@ -71,3 +71,8 @@ services:
     volumes:
       - ./multiple-return-values:/go
     command: go run main.go
+  variadic-functions:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./variadic-functions:/go
+    command: go run main.go
