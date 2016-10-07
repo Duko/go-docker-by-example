@@ -76,3 +76,8 @@ services:
     volumes:
       - ./variadic-functions:/go
     command: go run main.go
+  closures:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./closures:/go
+    command: go run main.go
