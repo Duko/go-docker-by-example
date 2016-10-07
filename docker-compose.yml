@@ -5,7 +5,7 @@ services:
     image: golang:1.7.1-alpine
     volumes:
       - ./hello-world:/go
-    command: go run main.go 
+    command: go run main.go
   values:
     image: golang:1.7.1-alpine
     volumes:
@@ -55,4 +55,9 @@ services:
     image: golang:1.7.1-alpine
     volumes:
       - ./maps:/go
+    command: go run main.go
+  range:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./range:/go
     command: go run main.go
