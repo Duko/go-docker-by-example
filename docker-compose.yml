@@ -86,3 +86,8 @@ services:
     volumes:
       - ./recursion:/go
     command: go run main.go
+  pointers:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./pointers:/go
+    command: go run main.go
