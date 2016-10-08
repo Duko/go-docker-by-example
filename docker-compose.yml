@@ -101,3 +101,8 @@ services:
     volumes:
       - ./methods:/go
     command: go run main.go
+  interfaces:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./interfaces:/go
+    command: go run main.go
