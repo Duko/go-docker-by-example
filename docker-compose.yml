@@ -91,3 +91,8 @@ services:
     volumes:
       - ./pointers:/go
     command: go run main.go
+  methods:
+    image: golang:1.7.1-alpine
+    volumes:
+      - ./methods:/go
+    command: go run main.go
